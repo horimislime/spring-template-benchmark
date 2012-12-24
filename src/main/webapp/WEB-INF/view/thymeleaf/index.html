@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title>Thymeleaf template benchmark</title>
+</head>
+<body>
+	<table>
+		<tr>
+			<td>Name</td>
+			<td>Age</td>
+			<td>Height</td>
+			<td>Weight</td>
+		</tr>
+		<tr th:each="person : ${persons}">
+			<td th:text="${person.name}">Name</td>
+			<td th:text="${person.age}">Age</td>
+			<td th:text="${person.height}">Height</td>
+			<td th:text="${person.weight}">Weight</td>
+		</tr>
+	</table>
+</body>
+</html>

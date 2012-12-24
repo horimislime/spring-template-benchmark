@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title>Velocity template benchmark</title>
+</head>
+<body>
+	<table>
+	<tr>
+		<td>Name</td>
+		<td>Age</td>
+		<td>Height</td>
+		<td>Weight</td>
+	</tr>
+	#foreach($person in $persons)
+	<tr>
+		<td>$person.name</td>
+		<td>$person.age</td>
+		<td>$person.height</td>
+		<td>$person.weight</td>
+	</tr>
+	#end
+	</table>
+</body>
+</html>
